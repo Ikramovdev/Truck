@@ -1,0 +1,70 @@
+.useful-section {
+    padding: 67px 0 0;
+}
+.useful {
+    display: flex;
+    flex-direction: column;
+    gap: 72px;
+}
+.useful__top {
+    height: 453px;
+    background-image: url(../images/useful-truck.png);
+    background-repeat: no-repeat;
+    background-size: 100% 453px;
+}
+.useful__title-wrapper{
+    width: 362px;
+    padding: 178px 790px 166px 90px;
+}
+.useful__img{
+    height: 453.8px;
+    position: absolute;
+    z-index: 2;
+}
+.useful__title {
+    @include textStyle($MB:0px, $FS:48px, $FW:600, $CLR:$white-clr, $LH:60px, $CASE:inherit);
+    font-family:"Exo 2",sans-serif;
+    position: absolute;
+    z-index: 3;
+}
+.useful__list {
+    padding-left: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 62px;
+}
+.useful__item {
+    width: 447px;
+    display: flex;
+    gap: 40px;
+}
+.useful__bottom-text-wrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.useful__item-subtitle {
+    @include textStyle($MB:0px, $FS:20px, $FW:600, $CLR:$title-clr, $LH:27px, $CASE:inherit);
+    font-family:"Exo 2",sans-serif;
+}
+.useful__item-text {
+    @include textStyle($MB:0px, $FS:16px, $FW:400, $CLR:$text-clr, $LH:24px, $CASE:inherit);
+    font-family:"PT Sans",sans-serif;
+}
+
+// Responsive
+// Tablet
+@media (max-width:1186px){
+    .useful__img{
+        width: 600px;
+    }
+    .useful__list{
+      padding: 0 200px;
+    }
+
+}
+@media (max-width:900px){
+    .useful-section{
+        display: none;
+    }
+}

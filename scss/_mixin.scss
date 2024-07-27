@@ -17,7 +17,7 @@
 
 @mixin buttonStyle($BTN_W, $BTN_PY, $BTN_BG_CLR,$BTN_BR_Radius, $BTN_Border_CLR,$BTN_FS,$BTN_FW, $BTN_LH, $BTN_CLR,$BTN_CASE){
     width: $BTN_W;
-    padding: $BTN_PY 0;
+    padding: $BTN_PY 0px;
     background-color: $BTN_BG_CLR;
     border-radius: $BTN_BR_Radius;
     border: 1px solid $BTN_Border_CLR;

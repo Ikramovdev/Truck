@@ -1,4 +1,183 @@
 .site-footer {
+    padding: 80px 0 30px;
+    background-color: #0B7572;
 }
 .footer {
+    @include  Display($items:center, $space:space-between, $gap:0px);
+}
+.footer__logo {
+    padding-right: 134px;
+    padding-bottom: 186px;
+}
+.footer__logo-text{
+    @include textStyle($MB:0px, $FS:60px, $FW:500, $CLR:$white-clr, $LH:90px, $CASE:capitalize);
+    font-family: 'Familjen Grotesk',sans-serif;
+}
+.footer__lists{
+    padding-right: 180px;
+    padding-bottom: 80px;
+    @include Display($items:center, $space:start, $gap:97px);
+}
+.footer__list {
+    @include Display($items:start, $space:start, $gap:25px);
+    flex-direction: column;
+}
+.footer__item-link {
+    @include textStyle($MB:0px, $FS:13px, $FW:600, $CLR:$white-clr, $LH:19px, $CASE:capitalize);
+    font-family: 'Exo 2',sans-serif;
+}
+.footer__social-wrapper {
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column;
+}
+.footer__social {
+    padding-bottom: 42px;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+.footer__social-number-link {
+    padding-bottom: 32px;
+    @include textStyle($MB:0px, $FS:13px, $FW:600, $CLR:$white-clr, $LH:20px, $CASE:capitalize);
+    font-family: 'Exo 2',sans-serif;
+}
+.footer__social-btn-link {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    @include buttonStyle($BTN_W:271px, $BTN_PY:8px, $BTN_BG_CLR:#FF9619,$BTN_BR_Radius:0px, $BTN_Border_CLR:transparent,$BTN_FS:13px,$BTN_FW:600, $BTN_LH:19px, $BTN_CLR:$white-clr,$BTN_CASE:capitalize);
+    font-family: 'Open Sans',sans-serif;
+}
+.footer-formed{
+    @include textStyle($MB:0px, $FS:12px, $FW:500, $CLR:$white-clr, $LH:18px, $CASE:capitalize);
+    font-family: 'Exo 2',sans-serif;
+    text-align: center;
+}
+// Responsive
+// Tablet
+@media (max-width:1063px){
+    .site-footer {
+        padding: 41px 0 21px;
+    }
+    .footer__logo {
+        padding-right: 71px;
+        padding-bottom: 110px;
+    }
+    .footer__lists{
+        padding-right: 20px;
+        padding-bottom: 35px;
+        @include Display($items:center, $space:start, $gap:74px);
+    }
+    .footer__logo-text{
+        @include textStyle($MB:0px, $FS:30px, $FW:500, $CLR:$white-clr, $LH:45px, $CASE:capitalize);
+        font-family: 'Familjen Grotesk',sans-serif;
+    }
+    .footer__item-link {
+        @include textStyle($MB:0px, $FS:8px, $FW:600, $CLR:$white-clr, $LH:12px, $CASE:capitalize);
+        font-family: 'Exo 2',sans-serif;
+    }
+    .footer__social {
+        padding-bottom: 21px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+    .footer__social-instagram {
+        width: 14px;
+        height: 14px;
+    }
+    .footer__social-facebook {
+        width:14px ;
+        height: 14px;
+    }
+    .footer__social-number-link {
+        padding-bottom: 11px;
+        @include textStyle($MB:0px, $FS:13px, $FW:600, $CLR:$white-clr, $LH:19px, $CASE:capitalize);
+        font-family: 'Exo 2',sans-serif;
+    }
+    .footer__social-btn-link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include buttonStyle($BTN_W:143px, $BTN_PY:4px, $BTN_BG_CLR:#FF9619,$BTN_BR_Radius:0px, $BTN_Border_CLR:transparent,$BTN_FS:6px,$BTN_FW:600, $BTN_LH:9px, $BTN_CLR:$white-clr,$BTN_CASE:capitalize);
+        font-family: 'Open Sans',sans-serif;
+        padding-left: 4px;
+        padding-right: 4px;
+    }
+    .footer__social-btn-img{
+        width: 8px;
+        height: 8px;
+    }
+    .footer-formed{
+        @include textStyle($MB:0px, $FS:10px, $FW:500, $CLR:$white-clr, $LH:15px, $CASE:capitalize);
+        font-family: 'Exo 2',sans-serif;
+        text-align: center;
+    }
+
+}
+// Mobile
+@media (max-width:600px){
+    .site-footer {
+        padding: 14px 0 28px;
+    }
+    .footer{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+    .footer__logo {
+        padding-bottom: 23px;
+        text-align: center;
+    }
+    .list-padding{
+        padding-bottom: 45px;
+    }
+    .footer__social-wrapper {
+        padding-bottom: 16px;
+        display: flex;
+        flex-direction: column;
+    }
+    .padding-del{
+        padding-bottom: 37px;
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+    }
+    .footer__social {
+        padding-bottom: 63px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        margin: 0 auto;
+    }
+    .footer__social-instagram {
+        width: 9px;
+        height: 9px;
+    }
+    .footer__social-facebook {
+        width:9px ;
+        height: 9px;
+    }
+    .footer__social-number-link {
+        padding-bottom: 23px;
+        @include textStyle($MB:0px, $FS:8px, $FW:600, $CLR:$white-clr, $LH:12px, $CASE:capitalize);
+        font-family: 'Exo 2',sans-serif;
+        margin: 0 auto;
+    }
+    .footer__social-btn-link {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        @include buttonStyle($BTN_W:100%, $BTN_PY:8px, $BTN_BG_CLR:#FF9619,$BTN_BR_Radius:0px, $BTN_Border_CLR:transparent,$BTN_FS:6px,$BTN_FW:600, $BTN_LH:9px, $BTN_CLR:$white-clr,$BTN_CASE:capitalize);
+        font-family: 'Open Sans',sans-serif;
+        padding-left: 20px;
+        padding-right: 14px;
+        text-align: left;
+    }
+    .footer-formed{
+        @include textStyle($MB:0px, $FS:10px, $FW:500, $CLR:$white-clr, $LH:15px, $CASE:capitalize);
+        font-family: 'Exo 2',sans-serif;
+    }
+    
 }
