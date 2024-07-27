@@ -1,5 +1,5 @@
-.work__section {
-    padding: 120px 0 0;
+.work-section {
+    padding-top: 120px;
 }
 .work__title-wrapper {
     width: 687px;
@@ -53,7 +53,7 @@
 // Responsive
 // Tablet
 @media (max-width:1000px){
-    .work__section{
+    .work-section{
         padding: 100px 44px;
     }
     .work__title-wrapper{
@@ -88,7 +88,7 @@
 }
 // Mobile
 @media(max-width:780px){
-    .work__section{
+    .work-section{
         padding: 34px 0 28px;
     }
     .work__title-wrapper{
